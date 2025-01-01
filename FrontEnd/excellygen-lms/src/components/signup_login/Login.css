@@ -1,0 +1,206 @@
+/* src/components/login/Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&family=Nunito+Sans:wght@400;500;700&display=swap');
+
+.login-container {
+  min-height: 100vh;
+  background-color: #F6E6FF;
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  background-color: #1B0A3F;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.navbar-brand {
+  font-family: 'Unbounded', cursive;
+  color: #BF4BF6 !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #BF4BF6;
+  border-radius: 8px;
+  background: transparent;
+  color: #BF4BF6;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #BF4BF6;
+  color: #FFFFFF;
+}
+
+.login-form-container {
+  max-width: 450px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(27, 10, 63, 0.12);
+  border: none;
+}
+
+.card-body {
+  padding: 2.5rem;
+}
+
+h1 {
+  font-family: 'Unbounded', cursive;
+  font-size: 2rem;
+  color: #1B0A3F;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #586574;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.875rem;
+  border: 1px solid #D6D6D6;
+  border-radius: 8px;
+  background: white;
+  color: #292f36;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #F6E6FF;
+  border-color: #BF4BF6;
+}
+
+.divider {
+  margin: 2rem 0;
+  color: #586574;
+  font-family: 'Nunito Sans', sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #D6D6D6;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.login-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1B0A3F;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.875rem;
+  border: 2px solid #D6D6D6;
+  border-radius: 8px;
+  font-family: 'Nunito Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #BF4BF6;
+  box-shadow: 0 0 0 3px rgba(191, 75, 246, 0.1);
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #586574;
+  transition: color 0.3s ease;
+}
+
+.password-input i:hover {
+  color: #BF4BF6;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.875rem;
+  margin: 1.5rem 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #BF4BF6;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #7A00B8;
+}
+
+.signup-link {
+  text-align: center;
+  color: #586574;
+  margin: 1rem 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.signup-link a {
+  color: #BF4BF6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #7A00B8;
+}

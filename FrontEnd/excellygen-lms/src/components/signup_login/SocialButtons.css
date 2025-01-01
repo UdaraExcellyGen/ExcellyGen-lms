@@ -1,0 +1,33 @@
+.social-auth-button {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #D6D6D6;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .social-auth-button:hover {
+    background-color: #F6E6FF;
+    border-color: #BF4BF6;
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .icon-wrapper {
+    flex: 0 0 20px;
+  }
+  
+  .button-text {
+    flex: 1;
+    text-align: center;
+    color: #292f36;
+    font-weight: 500;
+    margin: 0 12px;
+  }
