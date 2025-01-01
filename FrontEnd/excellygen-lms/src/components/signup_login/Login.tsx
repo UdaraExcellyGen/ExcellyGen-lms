@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import { useNavigate } from 'react-router-dom'; // import useNavigate
 import GoogleButton from './GoogleButton';
 import FacebookButton from './FacebookButton';
 
@@ -14,6 +15,9 @@ const Login: React.FC = () => {
     email: '',
     password: ''
   });
+
+  // Initialize navigate hook
+  const navigate = useNavigate();
 
   const togglePassword = (): void => {
     setShowPassword(!showPassword);
@@ -31,6 +35,9 @@ const Login: React.FC = () => {
     e.preventDefault();
     // Handle login logic here
     console.log('Login submitted:', formData);
+
+    // Redirect to Learning Path page after login
+    navigate('/learning-path');
   };
 
   return (
@@ -46,8 +53,8 @@ const Login: React.FC = () => {
 
       <div className="login-form-container card">
         <div className="card-body">
-          <h1>Login</h1>
-          <p className="subtitle">Welcome back to ExcellyGen-L&MS</p>
+          <h1 className="Log">Login</h1>
+          <p className="subtitleLog">Welcome back to ExcellyGen-L&MS</p>
 
           <div className="social-buttons">
             <GoogleButton />

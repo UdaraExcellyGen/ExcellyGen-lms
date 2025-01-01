@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+:root {
+  /* Primary Colors */
+  --russian-violet: #1B0A3F;
+  --indigo: #52007C;
+  --phlox: #BF4BF6;
+  --white: #FFFFFF;
+  --heliotrope: #D68BF9;
+  --pale-purple: #F6E6FF;
+  --french-violet: #7A00B8;
+  --persian-indigo: #34137C;
+
+  /* Secondary Colors */
+  --deep-sky-blue: #00BFFF;
+  --federal-blue: #03045e;
+  --gunmetal: #292f36;
+  --paynes-gray: #586574;
+  --timberwolf: #D6D6D6;
+  --medium-blue: #0609C6;
+  --pale-azure: #70DBFF;
+
+  /* Updated Progress Bar Colors */
+  --progress-bg: #f5f5f5;
+  --progress-fill: #34137C;
+  --progress-fill-hover: #1B0A3F;
+}
+
+.profile-container {
+  min-height: 100vh;
+  background-color: var(--pale-purple);
+  padding: 24px;
+}
+
+.profile-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: var(--white);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.profile-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: var(--phlox);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-icon {
+  color: var(--white);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-family: 'Unbounded', sans-serif;
+  color: var(--russian-violet);
+  font-size: 28px;
+  margin: 0;
+}
+
+.profile-title {
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--paynes-gray);
+  margin: 4px 0 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--pale-purple);
+}
+
+.card-title {
+  font-family: 'Unbounded', sans-serif;
+  color: var(--indigo);
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.progress-item {
+  width: 100%;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--paynes-gray);
+  font-size: 14px;
+}
+
+/* Updated Progress Bar Styles */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--progress-bg);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--progress-fill);
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 20px 20px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+
+.progress-item:hover .progress-fill {
+    background-color: var(--progress-fill-hover);
+  }
+
+.badges-container, .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.badge:hover {
+  transform: translateY(-1px);
+}
+
+.achievement-badge {
+  background-color: var(--heliotrope);
+  color: var(--white);
+}
+
+.badge-icon {
+  margin-right: 4px;
+}
+
+.skill-badge {
+  color: var(--white);
+}
+
+.skill-badge.primary {
+  background-color: var(--deep-sky-blue);
+}
+
+.skill-badge.secondary {
+  background-color: var(--federal-blue);
+}
+
+.skill-badge.tertiary {
+  background-color: var(--medium-blue);
+}
+
+.skill-badge.quaternary {
+  background-color: var(--pale-azure);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-content {
+    padding: 16px;
+  }
+}

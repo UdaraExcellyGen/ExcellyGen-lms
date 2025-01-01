@@ -51,7 +51,7 @@
   padding: 2.5rem;
 }
 
-h1 {
+.Log {
   font-family: 'Unbounded', cursive;
   font-size: 2rem;
   color: #1B0A3F;
@@ -59,11 +59,12 @@ h1 {
   text-align: center;
 }
 
-.subtitle {
+.subtitleLog {
   font-family: 'Nunito Sans', sans-serif;
   color: #586574;
   margin-bottom: 2rem;
   text-align: center;
+  line-height: 1.5;
 }
 
 .social-buttons {

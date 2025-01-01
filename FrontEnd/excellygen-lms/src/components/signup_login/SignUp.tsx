@@ -49,8 +49,8 @@ const SignUp: React.FC = () => {
 
       <div className="signup-form-container card">
         <div className="card-body">
-          <h1>Create Account</h1>
-          <p className="subtitle">Welcome to ExcellyGen-L&MS</p>
+          <h1 className="h1CA">Create Account</h1>
+          <p className="subtitleCA">Welcome to ExcellyGen-L&MS</p>
 
           <div className="social-buttons">
             <GoogleButton />
